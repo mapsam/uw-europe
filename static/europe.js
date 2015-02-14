@@ -107,7 +107,7 @@ function countryProperties(name) {
     case "Aland": 
       attr = {
         color: colors[0],
-        className: "country-label",
+        className: "country-label hide",
         x: 0,
         y: 0,
         rotate: 0
@@ -126,16 +126,16 @@ function countryProperties(name) {
       attr = {
         color: colors[2],
         className: "country-label small",
-        x: 8,
-        y: 0,
-        rotate: 0
+        x: 4,
+        y: 5,
+        rotate: -30
       };
       break;
     case "Belgium": 
       attr = {
         color: colors[1],
         className: "country-label small",
-        x: 0,
+        x: 17,
         y: 7,
         rotate: 0
       };
@@ -149,12 +149,12 @@ function countryProperties(name) {
         rotate: 0
       };
       break;
-    case "Bosnia & Herz.": 
+    case "Bos. & Herz.": 
       attr = {
         color: colors[4],
-        className: "country-label small",
+        className: "country-label small dark",
         x: 0,
-        y: 0,
+        y: -4,
         rotate: 0
       };
       break;
@@ -167,13 +167,13 @@ function countryProperties(name) {
         rotate: 0
       };
       break;
-    case "Switzerland": 
+    case "Switz.": 
       attr = {
         color: colors[3],
-        className: "country-label",
+        className: "country-label small",
         x: 0,
-        y: 0,
-        rotate: 0
+        y: 2,
+        rotate: -30
       };
       break;
     case "Czech Rep.": 
@@ -215,10 +215,10 @@ function countryProperties(name) {
     case "Estonia": 
       attr = {
         color: colors[3],
-        className: "country-label small dark",
-        x: 0,
-        y: 0,
-        rotate: 0
+        className: "country-label small",
+        x: 3,
+        y: 4,
+        rotate: 30
       };
       break;
     case "Finland": 
@@ -242,7 +242,7 @@ function countryProperties(name) {
     case "Faroe Islands": 
       attr = {
         color: colors[0],
-        className: "country-label",
+        className: "country-label hide",
         x: 0,
         y: 0,
         rotate: 0
@@ -260,7 +260,7 @@ function countryProperties(name) {
     case "Guernsey": 
       attr = {
         color: colors[0],
-        className: "country-label",
+        className: "country-label hide",
         x: 0,
         y: 0,
         rotate: 0
@@ -296,7 +296,7 @@ function countryProperties(name) {
     case "Isle of Man": 
       attr = {
         color: colors[0],
-        className: "country-label",
+        className: "country-label hide",
         x: 0,
         y: 0,
         rotate: 0
@@ -332,25 +332,25 @@ function countryProperties(name) {
     case "Jersey": 
       attr = {
         color: colors[0],
-        className: "country-label",
+        className: "country-label hide",
         x: 0,
         y: 0,
         rotate: 0
       };
       break;
-    case "Kosovo": 
+    case "Kos.": 
       attr = {
         color: colors[3],
-        className: "country-label",
-        x: 0,
-        y: 0,
+        className: "country-label small",
+        x: 1,
+        y: 4,
         rotate: 0
       };
       break;
     case "Liechtenstein": 
       attr = {
         color: colors[0],
-        className: "country-label",
+        className: "country-label hide",
         x: 0,
         y: 0,
         rotate: 0
@@ -360,14 +360,14 @@ function countryProperties(name) {
       attr = {
         color: colors[1],
         className: "country-label small",
-        x: 0,
+        x: -2,
         y: 0,
         rotate: 0
       };
       break;
     case "Lux.": 
       attr = {
-        color: colors[0],
+        color: colors[3],
         className: "country-label small",
         x: 16,
         y: 0,
@@ -387,7 +387,7 @@ function countryProperties(name) {
       attr = {
         color: colors[0],
         className: "country-label small dark",
-        x: 0,
+        x: -4,
         y: 0,
         rotate: 0
       };
@@ -405,16 +405,16 @@ function countryProperties(name) {
       attr = {
         color: colors[1],
         className: "country-label small",
-        x: 0,
-        y: 0,
+        x: 2,
+        y: 3,
         rotate: 0
       };
       break;
     case "Malta": 
       attr = {
         color: colors[0],
-        className: "country-label",
-        x: 0,
+        className: "country-label small dark",
+        x: -18,
         y: 0,
         rotate: 0
       };
@@ -423,17 +423,17 @@ function countryProperties(name) {
       attr = {
         color: colors[0],
         className: "country-label small dark",
-        x: -20,
-        y: 0,
+        x: -26,
+        y: 4,
         rotate: 0
       };
       break;
     case "Netherlands": 
       attr = {
         color: colors[4],
-        className: "country-label",
+        className: "country-label small dark",
         x: 0,
-        y: 0,
+        y: 8,
         rotate: 0
       };
       break;
@@ -441,9 +441,9 @@ function countryProperties(name) {
       attr = {
         color: colors[2],
         className: "country-label",
-        x: -35,
-        y: 101,
-        rotate: 0
+        x: -100,
+        y: 25,
+        rotate: -60
       };
       break;
     case "Poland": 
@@ -485,9 +485,9 @@ function countryProperties(name) {
     case "San Marino": 
       attr = {
         color: colors[0],
-        className: "country-label",
+        className: "country-label small dark",
         x: 0,
-        y: 0,
+        y: -4,
         rotate: 0
       };
       break;
@@ -495,8 +495,8 @@ function countryProperties(name) {
       attr = {
         color: colors[2],
         className: "country-label small",
-        x: 0,
-        y: 0,
+        x: 3,
+        y: 10,
         rotate: 0
       };
       break;
@@ -512,9 +512,9 @@ function countryProperties(name) {
     case "Slovenia": 
       attr = {
         color: colors[1],
-        className: "country-label",
-        x: 0,
-        y: 0,
+        className: "country-label small",
+        x: -10,
+        y: -2,
         rotate: 0
       };
       break;
@@ -600,6 +600,24 @@ function placeProperties(name) {
       break;
     case "Luxembourg":
       attr = placements.br;
+      break;
+    case "London":
+      attr = placements.tl;
+      break;
+    case "Berlin":
+      attr = placements.tl;
+      break;
+    case "Tirana":
+      attr = placements.tl;
+      break;
+    case "Sarajevo":
+      attr = placements.bl;
+      break;
+    case "San Marino":
+      attr = placements.bl;
+      break;
+    case "Reykjavík":
+      attr = placements.tl;
       break;
     default:
       attr = placements.tr;
