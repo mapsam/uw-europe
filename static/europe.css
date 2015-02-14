@@ -1,0 +1,36 @@
+body {
+  margin:0;
+  padding:0;
+  font-family:"Helvetica Neue", sans-serif;
+  overflow:hidden;
+}
+#map {
+  position:absolute;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+.land {
+  fill:#f6f6f6;
+  stroke:transparent;
+  stroke-weight:0px;
+}
+.country {
+  stroke:#fff;
+  stroke-weight:.25px;
+}
+
+.label {}
+.country-label {
+  text-transform:uppercase;
+  font-size:.6em;
+  font-weight:300;
+  fill:#fff;
+  letter-spacing:2.5px;
+}
+.place-label {
+  font-size:.6em;
+}
+.place-capital {
+  font-weight:900;
+}
