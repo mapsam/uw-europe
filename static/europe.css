@@ -1,7 +1,7 @@
 body {
   margin:0;
   padding:0;
-  font-family:"Helvetica Neue", sans-serif;
+  font-family: 'Lato', sans-serif;
   overflow:hidden;
 }
 #map {
@@ -25,12 +25,23 @@ body {
   text-transform:uppercase;
   font-size:.6em;
   font-weight:300;
-  fill:#fff;
+  fill:#f6f6f6;
   letter-spacing:2.5px;
+}
+.country-label.small {
+  font-size:.45em;
+  letter-spacing:1.5px;
+}
+.country-label.dark {
+  fill:#444;
+}
+.place {
+  fill:#444;
 }
 .place-label {
   font-size:.6em;
 }
 .place-capital {
-  font-weight:900;
+  /*font-weight:900;*/
+  fill:#444;
 }
