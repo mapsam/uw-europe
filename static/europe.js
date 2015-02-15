@@ -14,9 +14,9 @@ svg = d3.select("#map").append("svg")
   .attr("height", height);
 
 queue()   
-  .defer(d3.json, "/data/countries.json")
-  .defer(d3.json, "/data/land.json")
-  .defer(d3.json, "/data/places.geojson")
+  .defer(d3.json, "data/countries.json")
+  .defer(d3.json, "data/land.json")
+  .defer(d3.json, "data/places.geojson")
   //load more data here 
   .await(drawMap);  
 
