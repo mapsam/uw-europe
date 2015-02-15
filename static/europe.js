@@ -65,10 +65,6 @@ function drawMap(error, countries, land, places) {
     .data(places.features)
     .enter().append("path")
     .attr("d", path.pointRadius(2))
-    .style("visibility", function(d){
-      if (d.properties.adm0cap) return "visible";
-      else return "hidden";
-    })
     .attr("class", "place");
 
   /*
@@ -81,10 +77,6 @@ function drawMap(error, countries, land, places) {
     .attr('dx', function(d){ return placeProperties(d.properties.name).x; })
     .style('text-anchor', function(d){ return placeProperties(d.properties.name).a; })
     .text(function(d) { return d.properties.name; })
-    .style("visibility", function(d){
-      if (d.properties.adm0cap) return "visible";
-      else return "hidden";
-    })
     .attr('class', function(d){
       if (d.properties.adm0cap) return "place-label place-capital";
       else return "place-label";
@@ -253,7 +245,7 @@ function countryProperties(name) {
         color: colors[3],
         className: "country-label",
         x: 7,
-        y: 30,
+        y: 26,
         rotate: 0
       };
       break;
@@ -581,7 +573,7 @@ function placeProperties(name) {
       attr = placements.bl;
       break;
     case "Chisinau":
-      attr = placements.br;
+      attr = placements.bl;
       break;
     case "Bern":
       attr = placements.tl;
@@ -595,6 +587,9 @@ function placeProperties(name) {
     case "Vilnius":
       attr = placements.bl;
       break;
+    case "Turin":
+      attr = placements.br;
+      break;
     case "Lisbon":
       attr = placements.bl;
       break;
@@ -602,7 +597,7 @@ function placeProperties(name) {
       attr = placements.br;
       break;
     case "London":
-      attr = placements.tl;
+      attr = placements.bl;
       break;
     case "Berlin":
       attr = placements.tl;
@@ -618,6 +613,24 @@ function placeProperties(name) {
       break;
     case "Reykjavík":
       attr = placements.tl;
+      break;
+    case "Barcelona":
+      attr = placements.br;
+      break;
+    case "Birmingham":
+      attr = placements.br;
+      break;
+    case "Cardiff":
+      attr = placements.tl;
+      break;
+    case "Dnipropetrovsk":
+      attr = placements.br;
+      break;
+    case "Lille":
+      attr = placements.bl;
+      break;
+    case "Marseille":
+      attr = placements.br;
       break;
     default:
       attr = placements.tr;

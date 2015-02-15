@@ -51,8 +51,10 @@ body {
   fill:#444;
 }
 .place-label {
+  font-weight:100;
   font-size:.6em;
 }
 .place-capital {
   fill:#444;
+  font-weight:900;
 }
