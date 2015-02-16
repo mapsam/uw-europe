@@ -45,6 +45,23 @@ body {
 }
 
 /*
+** RIVERS
+*/
+.river {
+  fill:none;
+  stroke:#fff;
+  stroke-weight:.5px;
+  stroke-dasharray:.5px;
+  /*stroke-opacity:.7;*/
+}
+.river-label {
+  fill:#fff;
+  opacity:.7;
+  font-family:serif;
+  font-size:.7em;
+}
+
+/*
 ** PLACES
 */
 .place {

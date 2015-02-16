@@ -17,10 +17,11 @@ queue()
   .defer(d3.json, "data/countries.json")
   .defer(d3.json, "data/land.json")
   .defer(d3.json, "data/places.geojson")
+  .defer(d3.json, "data/rivers.json")
   //load more data here 
   .await(drawMap);  
 
-function drawMap(error, countries, land, places) {
+function drawMap(error, countries, land, places, rivers) {
   
   /*
   ** LAND
@@ -40,6 +41,39 @@ function drawMap(error, countries, land, places) {
     .attr("class", "country")
     .style("fill", function(d){ return countryProperties(d.properties.admin).color; })
     .attr("d", path);
+
+  /*
+  ** RIVERS
+  */
+  var riverObjects = svg.selectAll(".river")
+    .data(topojson.feature(rivers, rivers.objects.rivers).features)
+    .enter().append("path")
+    .attr("class", "river")
+    .attr("d", path);
+
+  /*
+  ** RIVER LABELS
+  */
+  var used = [];
+  var riverLabels = svg.selectAll(".river-label")
+    .data(topojson.feature(rivers, rivers.objects.rivers).features)
+    .enter().append("text")
+    .attr("class", "river-label")
+    .attr("text-anchor", "middle")
+    .attr("transform", function(d) {
+      var labelPoint = [path.centroid(d)[0], path.centroid(d)[1]];
+      return "translate(" + labelPoint + ")";
+    })
+    .attr("dy", 0)
+    .attr("dx", 0)
+    .text(function(d) {
+      if (used.indexOf(d.properties.name) == -1) {
+        used.push(d.properties.name);
+        return d.properties.name;
+      } else {
+        return "";
+      }      
+    });
 
   /*
   ** COUNTRY LABELS
