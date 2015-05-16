@@ -1,22 +1,8 @@
-body {
-  margin:0;
-  padding:0;
-  font-family: 'Lato', sans-serif;
-  overflow:hidden;
-}
-#map {
-  position:absolute;
-  width:100%;
-  height:100%;
-  overflow:hidden;
-  /*background:#deeff5;*/
-}
-
 /*
 ** LAND & EXTRAS
 */
 .land {
-  fill:#f1f1f1;
+  fill: $land;
 }
 
 /*
@@ -29,19 +15,22 @@ body {
   text-transform:uppercase;
   font-size:.6em;
   font-weight:300;
-  fill:#f6f6f6;
+  fill: $land;
   letter-spacing:2.5px;
-}
-.country-label.hide {
-  display:none;
-  visibility:hidden;
-}
-.country-label.small {
-  font-size:.45em;
-  letter-spacing:1.5px;
-}
-.country-label.dark {
-  fill:#444;
+
+  .hide {
+    display:none;
+    visibility:hidden;
+  }
+
+  .small {
+    font-size:.45em;
+    letter-spacing:1.5px;
+  }
+  
+  .dark {
+    fill: $label-dark;
+  }
 }
 
 /*
@@ -49,13 +38,13 @@ body {
 */
 .river {
   fill:none;
-  stroke:#fff;
+  stroke: $river;
   stroke-weight:.5px;
   stroke-dasharray:.5px;
   /*stroke-opacity:.7;*/
 }
 .river-label {
-  fill:#fff;
+  fill: $label-white;
   opacity:.7;
   font-family:serif;
   font-size:.7em;
@@ -65,13 +54,13 @@ body {
 ** PLACES
 */
 .place {
-  fill:#444;
+  fill: $label-dark;
 }
 .place-label {
   font-weight:100;
   font-size:.6em;
 }
 .place-capital {
-  fill:#444;
+  fill: $label-dark;
   font-weight:900;
 }

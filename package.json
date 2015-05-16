@@ -1,0 +1,30 @@
+{
+  "name": "uw-europe",
+  "version": "1.0.0",
+  "description": "A port of the UW-Madison Geography 370 lab in d3.js",
+  "main": "switch-cities.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/svmatthews/uw-europe.git"
+  },
+  "author": "Sam Matthews",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/svmatthews/uw-europe/issues"
+  },
+  "homepage": "https://github.com/svmatthews/uw-europe",
+  "devDependencies": {
+    "browser-sync": "^1.9.1",
+    "gulp": "^3.8.10",
+    "gulp-bower": "0.0.10",
+    "gulp-concat": "^2.4.3",
+    "gulp-jshint": "^1.9.0",
+    "gulp-sass": "^1.3.2",
+    "gulp-uglify": "^1.1.0",
+    "gulp-watch": "^4.1.0",
+    "main-bower-files": "^2.5.0"
+  }
+}
