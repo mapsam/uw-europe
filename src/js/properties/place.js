@@ -4,7 +4,7 @@ function placeProperties(name) {
     tl: {x: -3, y: -2, a: "end" },
     bl: {x: -3, y: 7,  a: "end" },
     br: {x: 2,  y: 7,  a: "start" }
-  }
+  };
   switch (name) {
     case "Vatican City":
       attr = placements.bl;

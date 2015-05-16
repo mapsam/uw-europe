@@ -1,7 +1,7 @@
 $font: 'Lato', sans-serif;
 
 $white: #fff;
-$label-light: $white;
+$label-white: $white;
 $label-dark: #444;
 
 $water: #deeff5;
@@ -25,5 +25,5 @@ body {
   width:100%;
   height:100%;
   overflow:hidden;
-  background: $water;
+  // background: $water;
 }

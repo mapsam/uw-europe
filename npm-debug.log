@@ -1,27 +1,82 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'init' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'd3js', '--save-dev' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.33
-4 verbose config Skipping project config: /Users/mapsam/.npmrc. (matches userconfig)
-5 silly package data undefined
-6 info init written successfully
-7 error Error: Invalid version: "0.1"
-7 error     at Object.module.exports.fixVersionField (/usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/fixer.js:183:13)
-7 error     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/normalize.js:30:38
-7 error     at Array.forEach (native)
-7 error     at normalize (/usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/normalize.js:29:15)
-7 error     at final (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:342:33)
-7 error     at then (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:126:33)
-7 error     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:331:40
-7 error     at evalmachine.<anonymous>:271:14
-7 error     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:102:5
-7 error     at Object.oncomplete (evalmachine.<anonymous>:107:15)
-8 error If you need help, you may report this *entire* log,
-8 error including the npm and node versions, at:
-8 error     <http://github.com/npm/npm/issues>
-9 error System Darwin 14.3.0
-10 error command "node" "/usr/local/bin/npm" "init"
-11 error cwd /Users/mapsam/github/uw-europe
-12 error node -v v0.10.33
-13 error npm -v 1.4.28
-14 verbose exit [ 1, true ]
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'd3js', null ]
+6 verbose cache add name=undefined spec="d3js" args=["d3js",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'd3js',
+7 verbose parsed url   path: 'd3js',
+7 verbose parsed url   href: 'd3js' }
+8 silly lockFile a884fd85-d3js d3js
+9 verbose lock d3js /Users/mapsam/.npm/a884fd85-d3js.lock
+10 silly lockFile a884fd85-d3js d3js
+11 silly lockFile a884fd85-d3js d3js
+12 verbose addNamed [ 'd3js', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 1df1cd4d-d3js d3js@
+15 verbose lock d3js@ /Users/mapsam/.npm/1df1cd4d-d3js.lock
+16 silly addNameRange { name: 'd3js', range: '*', hasData: false }
+17 verbose request where is /d3js
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 298d44e743480afc
+20 verbose url raw /d3js
+21 verbose url resolving [ 'https://registry.npmjs.org/', './d3js' ]
+22 verbose url resolved https://registry.npmjs.org/d3js
+23 verbose request where is https://registry.npmjs.org/d3js
+24 info trying registry request attempt 1 at 13:13:15
+25 http GET https://registry.npmjs.org/d3js
+26 http 404 https://registry.npmjs.org/d3js
+27 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 verbose headers   'content-type': 'application/json',
+27 verbose headers   'cache-control': 'max-age=0',
+27 verbose headers   'content-length': '51',
+27 verbose headers   'accept-ranges': 'bytes',
+27 verbose headers   date: 'Sat, 16 May 2015 18:13:14 GMT',
+27 verbose headers   via: '1.1 varnish',
+27 verbose headers   age: '0',
+27 verbose headers   connection: 'keep-alive',
+27 verbose headers   'x-served-by': 'cache-dfw1834-DFW',
+27 verbose headers   'x-cache': 'MISS',
+27 verbose headers   'x-cache-hits': '0',
+27 verbose headers   'x-timer': 'S1431799994.808678,VS0,VE65' }
+28 silly registry.get cb [ 404,
+28 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 silly registry.get     'content-type': 'application/json',
+28 silly registry.get     'cache-control': 'max-age=0',
+28 silly registry.get     'content-length': '51',
+28 silly registry.get     'accept-ranges': 'bytes',
+28 silly registry.get     date: 'Sat, 16 May 2015 18:13:14 GMT',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     age: '0',
+28 silly registry.get     connection: 'keep-alive',
+28 silly registry.get     'x-served-by': 'cache-dfw1834-DFW',
+28 silly registry.get     'x-cache': 'MISS',
+28 silly registry.get     'x-cache-hits': '0',
+28 silly registry.get     'x-timer': 'S1431799994.808678,VS0,VE65' } ]
+29 silly lockFile 1df1cd4d-d3js d3js@
+30 silly lockFile 1df1cd4d-d3js d3js@
+31 error 404 404 Not Found: d3js
+31 error 404
+31 error 404 'd3js' is not in the npm registry.
+31 error 404 You should bug the author to publish it
+31 error 404 It was specified as a dependency of 'uw-europe'
+31 error 404
+31 error 404 Note that you can also install from a
+31 error 404 tarball, folder, or http url, or git url.
+32 error System Darwin 14.3.0
+33 error command "node" "/usr/local/bin/npm" "install" "d3js" "--save-dev"
+34 error cwd /Users/mapsam/github/uw-europe
+35 error node -v v0.10.33
+36 error npm -v 1.4.28
+37 error code E404
+38 verbose exit [ 1, true ]
